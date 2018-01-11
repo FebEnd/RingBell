@@ -13,21 +13,21 @@ public class UserRequestTest {
 
     @Test
     public void testRegister() {
-        int i = UserRequest.register("aaaaaa39497", "testpassword", "aaaaaa39497");
+        int i = UserRequest.register("aaaaaa394978", "testpassword", "aaaaaa394978");
         Assert.assertEquals(0,i);
         System.out.println(i);
     }
 
     @Test
     public void testLogin() {
-        int i = UserRequest.login("aaaaaa3", "testpasswordp");
+        int i = UserRequest.login("aaaaaa394978", "testpassword");
         System.out.println(i);
         Assert.assertEquals(0,i);
     }
 
     @Test
     public void testModify() {
-        UserRequest.login("aaaaaa39497", "testpassword");
+        UserRequest.login("aaaaaa394978", "testpassword");
         int i = UserRequest.modify("testpassword", "testnewpwd");
         Assert.assertEquals(0,i);
     }
